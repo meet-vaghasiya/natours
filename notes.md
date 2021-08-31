@@ -15,6 +15,12 @@
 | css propery       | block                     | inline-block                                                              |
 | ----------------- | ------------------------- | ------------------------------------------------------------------------- |
 | text-align:center | text inside button center | whole block center(trated as text and also width is according to content) |
-| width             | 100%                      | width according to content                                                |
+| width             | 100%                      | width according to content                                                |  |  |
+
+
 4.How z-index propery affect when trasform, and opacity ,please see this blog:
  -   https://www.freecodecamp.org/news/4-reasons-your-z-index-isnt-working-and-how-to-fix-it-coder-coder-6bc05f10
+  
+5.classi and id of css should be based on `BEM` model.
+
+6. sass folder strucher should be based on `7-1-pattern` modal. https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture

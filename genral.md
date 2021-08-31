@@ -17,8 +17,23 @@
 3. remove default style
    - in **ul=>**    `list-style: none;` 
    - remove **underline and color from link=>**   `text-decoration: none;`
-   - 
+  
+4. defualt setting:
+    - by defualt box-sizing:border-box value is not inherited so put in body and tell in every elemet to inherti in `*` to set `box-sizing: inherit;` . also set `font-size: 62.5%;`
+   
+        ```
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
 
+        body {
+        
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+        ```
 
  
 

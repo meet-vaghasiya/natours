@@ -7,19 +7,20 @@ Dark green: #28b485
 
 */
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
     font-family: " Lato,Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 62.5%;
     line-height: 1.7;
     color: #777;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -31,17 +32,17 @@ body {
     position: relative;
 }
 
-.logo {
+.header__logo-box {
     position: absolute;
     top: 25px;
     left: 25px;
 }
 
-.logo-img {
+.header__logo-img {
     height: 20px;
 }
 
-.header-container {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -49,7 +50,7 @@ body {
     text-align: center;
 }
 
-.main-heading {
+.heading-primary--main {
     display: block;
     font-weight: 500;
     text-transform: uppercase;
@@ -60,7 +61,7 @@ body {
     animation: moveFromLeft 0.5s ease-out;
 }
 
-.main-subheading {
+.heading-primary--sub {
     display: block;
     text-transform: uppercase;
     color: #fff;
@@ -71,34 +72,29 @@ body {
     animation: moveFromRight 0.5s ease-out;
 }
 
-.main-btn:link, .main-btn:visited {
+.btn:link, .btn:visited {
     text-transform: uppercase;
     font-size: 16px;
     display: inline-block;
     padding: 5px 10px;
-    background-color: #fff;
-    color: black;
-    /* width: 50%; */
     border-radius: 100px;
     text-decoration: none;
     font-family: inherit;
     transition: all .3s;
     position: relative;
-    animation-fill-mode: backwards;
-    animation: moveFromBottom 0.5s ease-out;
 }
 
-.main-btn:link:hover {
+.btn:link:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.main-btn:link:active {
+.btn:link:active {
     transform: translateY(-2px);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.main-btn::after {
+.btn::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -112,9 +108,19 @@ body {
     transition: all 0.1s;
 }
 
-.main-btn:hover::after {
+.btn:hover::after {
     transform: scale(1.6);
     opacity: 0;
+}
+
+.btn--white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn--anitemated {
+    animation-fill-mode: backwards;
+    animation: moveFromBottom 0.5s ease-out;
 }
 
 @keyframes moveFromLeft {
