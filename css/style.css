@@ -1,0 +1,145 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: " Lato,Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url('/img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.logo-img {
+    height: 20px;
+}
+
+.header-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-heading {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 52px;
+    letter-spacing: 40px;
+    margin-right: -40px;
+    animation: moveFromLeft 0.5s ease-out;
+}
+
+.main-subheading {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 15px;
+    margin-right: -18px;
+    margin-bottom: 20px;
+    animation: moveFromRight 0.5s ease-out;
+}
+
+.main-btn:link, .main-btn:visited {
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: black;
+    /* width: 50%; */
+    border-radius: 100px;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all .3s;
+    position: relative;
+    animation-fill-mode: backwards;
+    animation: moveFromBottom 0.5s ease-out;
+}
+
+.main-btn:link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-btn:link:active {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    background-color: #fff;
+    transition: all 0.1s;
+}
+
+.main-btn:hover::after {
+    transform: scale(1.6);
+    opacity: 0;
+}
+
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveFromRight {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveFromBottom {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
