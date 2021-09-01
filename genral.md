@@ -35,6 +35,27 @@
         }
         ```
 
+5. in conteainer or every row:
+        ```
+            .conateiner{
+            max-width:112rem;
+            margin:0 auto;
+            }
+        ```
+            
+
+6. for list items:
+
+        ```css
+        ul {
+        list-style:none;
+            &:not(:last-child) {
+                margin-bottom: $list-vertical;
+            }
+        }
+
+        ```
+   
  
 
 

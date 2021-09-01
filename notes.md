@@ -36,3 +36,11 @@
   
 9. if you install npm packge globally thant it will not shown in `package.json`. so **may be affect in production.** so code is work in your machine and not in server or live. for example i have live serve install globally and not shown in package.json but still work.
 
+10. first step of desing is always set the **max-width (use max-width  instead of width for responsive purpose)**
+ of container.
+
+
+        
+ 11. `width: calc((100% - 2 * #{$gutter-horizontal}) / 3);` and `width: calc((100% - 2* #{$gutter-horizontal}) / 3);`.
+     in both of them only margin difference which is spanc between  2 and *. may be sass understand 2* as veriable. so give space.
+ 
