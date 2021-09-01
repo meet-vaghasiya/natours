@@ -41,6 +41,28 @@
 
 
         
- 11. `width: calc((100% - 2 * #{$gutter-horizontal}) / 3);` and `width: calc((100% - 2* #{$gutter-horizontal}) / 3);`.
+ 11. `width: calc((100% - 2 * #{$gutter-horizontal}) / 3);` and `width: calc((100% - 2* #{$gutter-horizontal}) / 3);`
+
      in both of them only margin difference which is spanc between  2 and *. may be sass understand 2* as veriable. so give space.
- 
+
+
+11. to give gradiant color to text
+        ```css
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        display: inline-block;
+        -webkit-background-clip: text;
+        color: transparent;
+        ```
+12. we can also give text-shadow to the text.
+    - `text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);`
+
+13. `H1` element should be only **one time in whole page.** all other heading will be in `h2.` subheading will `h3,h4`
+
+14. see compositins.scss file code for image scale up on hover and other image scall small.
+15. if you want space in border than give outline propery in css.
+        ```
+                    outline-offset: 2rem;
+                    outline: 1rem solid $color-primary;
+        ```
+
+16. font size 62.5% is not working same in html and body.please verify this.

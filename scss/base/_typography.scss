@@ -1,7 +1,6 @@
 body {
     font-family: " Lato,Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 62.5%;
     line-height: 1.7;
     color: #777;
     padding: 30px;
@@ -27,5 +26,35 @@ body {
         letter-spacing: 15px;
         margin-right: -18px;
         margin-bottom: 20px;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &:hover {
+        transform: skewY(5deg) skewX(2deg);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+}
+
+.heading-tertairy {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
     }
 }
