@@ -18,9 +18,21 @@
 | width             | 100%                      | width according to content                                                |  |  |
 
 
-4.How z-index propery affect when trasform, and opacity ,please see this blog:
+4. How z-index propery affect when trasform, and opacity ,please see this blog:
  -   https://www.freecodecamp.org/news/4-reasons-your-z-index-isnt-working-and-how-to-fix-it-coder-coder-6bc05f10
   
-5.classi and id of css should be based on `BEM` model.
+5. class and id of css should be based on `BEM` model.
 
 6. sass folder strucher should be based on `7-1-pattern` modal. https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture
+
+7. install node-sass in devDependecies because it's not require in product. at the end sass just convert into normal css. so use in devDependecies
+    `npm i node-sass --save-dev`
+
+8. other package like jqury use even in product so 
+   `npm insall jquery --save`
+      - thi will no loner required  after `npm 5.0+`  justo do `npm install jquery` 
+      - event after npm 6.0+ just requried `npm i jquery`
+      - verify above notes.
+  
+9. if you install npm packge globally thant it will not shown in `package.json`. so **may be affect in production.** so code is work in your machine and not in server or live. for example i have live serve install globally and not shown in package.json but still work.
+

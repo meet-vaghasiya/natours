@@ -1,0 +1,25 @@
+{
+  "name": "natoues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meet-vaghasiya/natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meet-vaghasiya/natours/issues"
+  },
+  "homepage": "https://github.com/meet-vaghasiya/natours#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14"
+  }
+}

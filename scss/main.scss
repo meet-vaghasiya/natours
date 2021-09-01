@@ -1,0 +1,27 @@
+//abstract
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+//base
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+//pages
+@import "pages/home";
+
+//componenet
+@import "components/button";
+
+//layouts
+@import "layout/header";
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a   
+Dark green: #28b485
+
+*/
