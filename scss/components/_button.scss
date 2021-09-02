@@ -1,18 +1,21 @@
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
         font-size: $default-font-size;
         display: inline-block;
-        padding: 5px 10px;
+        padding: 1.5rem 4rem;
         border-radius: 100px;
         text-decoration: none;
         font-family: inherit;
         transition: all 0.3s;
         position: relative;
+        border: none;
+        cursor: pointer;
     }
 
-    &:link:hover {
+    &:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
         &::after {
@@ -21,7 +24,9 @@
         }
     }
 
-    &:link:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-2px);
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     }
@@ -43,6 +48,19 @@
     &--white {
         background-color: $color-white;
         color: #777;
+        &::after {
+            background-color: $color-white;
+        }
+    }
+    &--green {
+        background-color: $color-white;
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 1rem 1.5rem;
+
+        &::after {
+            background-color: $color-primary;
+        }
     }
 
     &--anitemated {

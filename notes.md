@@ -66,3 +66,16 @@
         ```
 
 16. font size 62.5% is not working same in html and body.please verify this.
+
+17. below code (it's written in sass file) will select only all direct children.
+        ```
+        & > * {
+                transform: skewY(7deg);
+            }
+        ```
+
+18. backgrond-color: in linear-gradiant reutn invliad property valie in crome but in background-image give correct result. don't know why.. so always use background-image for grediant color.
+
+19. if we use background-image and code in scss file url() file must be relative to the style.css file not your scss file . beacuse at the end code will return into css file. so if you give file from scss file than it will return  path from scss not from css.
+
+20. `box-decoration-break` is use for beaak the word. if you use span and give padding than it will give only first and last . means suppose if word break due to specing and you reuiered specing in also new line . at this time it will reuqire.it's not work in google crome so use webkit prefix.  
