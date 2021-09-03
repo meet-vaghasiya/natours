@@ -3,4 +3,5 @@
 
 3. jonas's site and his resourses -> http://codingheroes.io/resources/
 
-4. cover for free videos https://coverr.co/
+4. cover for free videos https://coverr.co/ 
+5. easing webiste use for to create custom transition effect.
