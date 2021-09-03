@@ -79,3 +79,16 @@
 19. if we use background-image and code in scss file url() file must be relative to the style.css file not your scss file . beacuse at the end code will return into css file. so if you give file from scss file than it will return  path from scss not from css.
 
 20. `box-decoration-break` is use for beaak the word. if you use span and give padding than it will give only first and last . means suppose if word break due to specing and you reuiered specing in also new line . at this time it will reuqire.it's not work in google crome so use webkit prefix.  
+21. if you want to change outside content shape than use shape outside property in css use with webkit otherwise not work in mozilla browser.
+22. if you skew div element. so all childs will also skew. so to skew in reverse direction use & > * {}. so back them in original position. if any child use transofrm already than it will not work so give them in them propery.
+23. if you want to add caption in image than use figure propery and use img tag in that.
+
+24.  if you see thin line while using transalate, animatinon and hover anywherer than give         `backface-visibility: hidden;` or         `overflow: hidden;` . 
+25.  figcaption use for caption in image in figure element. if you want to show only in hover than use 
+26.  for zoom out image first scale image and in hover use scale(1) .if you do first scale normal and than reduce scale(0.8) than image not fit in container and space is visible.  so always do first zoom image and than only scale to 1.
+27.  for background video ,
+     -   make write src in sorce inside video tag. 
+     -   give loop, mutued, type attribute. 
+     -   no need to wrap in content. give it's to absolte position. 
+28.  `object-fit:cover` work same as `background-size:cover` . both  maintain aspect ration.
+

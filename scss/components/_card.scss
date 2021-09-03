@@ -16,8 +16,7 @@
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
-        &--front {
-        }
+
         &--back {
             transform: rotateY(180deg);
             &-1 {
