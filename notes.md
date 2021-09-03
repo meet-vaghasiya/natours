@@ -91,4 +91,14 @@
      -   give loop, mutued, type attribute. 
      -   no need to wrap in content. give it's to absolte position. 
 28.  `object-fit:cover` work same as `background-size:cover` . both  maintain aspect ration.
+29.  we can pass mutiple artgument at diff stage in grediant color. and also give diff percenrage at diff color.
+30. Lot's property is included in form.scss .please visit once.
+**for input field**
+    - color is not inhertied. so define color or use `color:inherit ` for same parent color
+    -  font-family also not inherttied.
+    - sudo class for input element: `:focus`,`:invalid`, `::-webkit-input-placeholder` ,`:placeholder-shown`.
+
+32. use `visibility:hidden` and `opacity:0` , if you want animation .because animation is not work in `dispaly:none`.
+33. 
+
 
